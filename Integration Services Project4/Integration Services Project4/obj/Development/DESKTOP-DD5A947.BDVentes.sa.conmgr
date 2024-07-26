@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-DD5A947.BDVentes.sa"
+  DTS:DTSID="{F7EF2E4C-7E1C-41BA-8773-BF0B9B6EE272}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-DD5A947;User ID=sa;Initial Catalog=BDVentes;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaalwpJlfgEisYGZAJ+fZHQAAAAACAAAAAAAQZgAAAAEAACAAAADqwCK0lqYF8CVV0vrmBFxwiYCVXC5TmhScy4N9fvQ0TAAAAAAOgAAAAAIAACAAAADy1R37D+ImAaFr3gAVXAuMzsXiauz6PJY3tW2ZhksnV3AAAABbjkDTR8f+HZjr+rOharD288IIPecFT8CkvEuFJ4Guzrwks1QupKwgOICElJQUDS2IdkGWf08s8+EMwJ4MpqRq1TUKfeMuujMkH98+KIV1s0158nN88ximVMf8dB87k3/v5TAHOhqW62mBQf605XMFQAAAALzeXs4+vWrpCH4CZS9HObfYrelzof4AyiaXvs/IrUtlyg9RtouwAU2dSJ4cjZbYwmJxQUUlJYjs+BfQ9b9iiUQ=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

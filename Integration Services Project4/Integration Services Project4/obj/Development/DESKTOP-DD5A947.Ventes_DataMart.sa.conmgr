@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-DD5A947.Ventes_DataMart.sa"
+  DTS:DTSID="{EF278DE4-930A-462C-A45C-238E1C039A99}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-DD5A947;User ID=sa;Initial Catalog=Ventes_DataMart;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaalwpJlfgEisYGZAJ+fZHQAAAAACAAAAAAAQZgAAAAEAACAAAAAqQbi3Pf2O9u+mUWr2qtj/uZ0h2UOCmGksuK2qfsq+ewAAAAAOgAAAAAIAACAAAAC4g3u7qcVqKhmORwipzHmDdnGFnNEYRbb0OKulAqz+SHAAAAC4FaEqWRXpyUS/YVenz3sRNGeYd8i66M49kguXoLtPjmFrIG2CHUEPnD3bF/GtBcfwia27+ZanUq63unJF6vRzZHbpJBfsKoAaDXouJ9Lw7aOwAZaJ/fzb6EnTP3Y54etLPFY5cUQ/xMs5QfRfQGP1QAAAAM+aZeavv16h8M5ArivXAPJeQs5eg1ZRHcBSsp/r1wd2MMifF4aAkKqm32hzh0uo3qpC6TTRNMfzeH/G7pbGTNY=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

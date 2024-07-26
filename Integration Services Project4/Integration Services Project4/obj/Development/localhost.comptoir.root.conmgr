@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.comptoir.root"
+  DTS:DTSID="{952A1A6C-D61E-4BCD-B798-D0F1B28BF2F2}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=localhost;user id=root;persistsecurityinfo=True;protocol=Socket;database=comptoir;logging=False;pipe=MYSQL;port=3306;sharedmemoryname=MYSQL;compress=False;connectionlifetime=0;connectionreset=False;maxpoolsize=100;minpoolsize=0;pooling=True;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

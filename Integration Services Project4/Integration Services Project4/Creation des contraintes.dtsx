@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/24/2021 8:43:06 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-DD5A947"
+  DTS:CreatorName="DESKTOP-DD5A947\mednour"
+  DTS:DTSID="{48B020A9-0CA0-4A1D-9685-E85693BC7FB5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{FD96C7E9-E5FD-427A-979C-72E8B7D799DC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cnxDataMart]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{8400D43B-3C27-4C3E-8675-CEDAA1EAC97F}"
+      DTS:ObjectName="cnxDataMart">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-DD5A947;Integrated Security=SSPI;Connect Timeout=30;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute T-SQL Statement Task"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Execute T-SQL Statement Task"
+      DTS:DTSID="{9EAE8D82-F1F2-420C-8AC7-C156D280D81B}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute T-SQL Statement Task"
+      DTS:TaskContact="Execute T-SQL Statement Task; Microsoft Corporation; Microsoft SQL Server v9; © 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8400D43B-3C27-4C3E-8675-CEDAA1EAC97F}"
+          SQLTask:SqlStatementSource="ALTER TABLE [Ventes_DataMart].[dbo].[Ventes] ADD CONSTRAINT  FK_client FOREIGN KEY (idclient)&#xA;REFERENCES  [Ventes_DataMart].[dbo].[Client] (idclt)&#xA;GO&#xA;ALTER TABLE [Ventes_DataMart].[dbo].[Ventes] ADD CONSTRAINT  FK_produit FOREIGN KEY (idproduit)&#xA;REFERENCES  [Ventes_DataMart].[dbo].[Produit] (idprod)&#xA;GO&#xA;&#xA;ALTER TABLE [Ventes_DataMart].[dbo].[Ventes] ADD CONSTRAINT  FK_mois FOREIGN KEY (Moisventes)&#xA;REFERENCES  [Ventes_DataMart].[dbo].[Temps] (mois)&#xA;GO&#xA;ALTER TABLE [Ventes_DataMart].[dbo].[Ventes] ADD CONSTRAINT  FK_annee FOREIGN KEY (anneeVentes)&#xA;REFERENCES  [Ventes_DataMart].[dbo].[Temps] (annee)&#xA;GO&#xA;"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Execute T-SQL Statement Task"
+          TopLeft="107,72" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
